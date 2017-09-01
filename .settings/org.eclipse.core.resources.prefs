@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/test/util/CopyFileUtil.java=UTF-8
+encoding//src/main/java/com/test/util/EncodeMd5Util.java=UTF-8
+encoding//src/main/java/config/redis.properties=UTF-8
+encoding//src/main/java/jdbc.properties=UTF-8
+encoding//src/main/webapp/WEB-INF/ftl/emailHome.ftl=UTF-8
+encoding//src/main/webapp/WEB-INF/ftl/hello.ftl=UTF-8
+encoding//src/main/webapp/WEB-INF/ftl/homes.ftl=UTF-8
+encoding//src/main/webapp/assets/js/home.js=UTF-8
+encoding/target=UTF-8
