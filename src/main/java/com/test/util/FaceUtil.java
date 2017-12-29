@@ -19,13 +19,13 @@ import javax.net.ssl.SSLException;
 
 public class FaceUtil {
 
-	public static void main(String[] args) {
-		 File file = new File("D:\\ssss.jpg");
+	public String getData(String token,File file) {
+//		 File file = new File("D:\\ssss.jpg");
 			byte[] buff = getBytesFromFile(file);
 			String url = "https://api-cn.faceplusplus.com/facepp/v3/face/analyze";
 	        HashMap<String, String> map = new HashMap<>();
 	        HashMap<String, byte[]> byteMap = new HashMap<>();
-	        map.put("face_tokens", "1014c104ef7f2f8a8023b6190a917cb2");
+	        map.put("face_tokens", token);
 	        map.put("api_key", "p9mppgnLtS1G-B5Zn4vU3nW8B-Z2T1gC");
 	        map.put("api_secret", "tNsR3gp4cSbpWLyVGdkd2xAlj0PFIwWe");
 			map.put("return_landmark", "1");
@@ -35,8 +35,10 @@ public class FaceUtil {
 	            byte[] bacd = post(url, map, byteMap);
 	            String str = new String(bacd);
 	            System.out.println(str);
+	            return str;
 	        }catch (Exception e) {
 	        	e.printStackTrace();
+	        	return null;
 			}
 		}
 		

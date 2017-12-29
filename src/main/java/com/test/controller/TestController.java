@@ -54,6 +54,7 @@ public class TestController {
 	@ResponseBody
 	@RequestMapping("redis")
 	public Map<String, String> redis(String name,HttpServletRequest request,HttpServletResponse response,HttpSession session) {
+		//可以让浏览器跨域
 		response.setHeader("Access-Control-Allow-Origin", "*"); 
 		session.setAttribute("name", name);
 		// jedisCluster.set("hello", "Jinx");
@@ -74,7 +75,7 @@ public class TestController {
 	public void uploadFile(@RequestParam("file") MultipartFile file) throws IOException {
 		System.out.println(file.getOriginalFilename());
 		file.transferTo(new File("D:/" + file.getOriginalFilename()));
-		System.out.println("�ɹ�");
+		System.out.println("�ɹ�");
 		/* return new Result(true,ok,filename); */
 	}
 
