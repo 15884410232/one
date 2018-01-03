@@ -34,8 +34,11 @@ public class HomeController {
 	public String  face(@RequestParam("file") MultipartFile file){
 		try{
 		System.out.println(file.getOriginalFilename());
-		file.transferTo(new File("D:/test/" + file.getOriginalFilename()));
-		File files=new File("D:/"+file.getOriginalFilename());
+		//file.transferTo(new File("D:/test/" + file.getOriginalFilename()));
+		file.transferTo(new File("/root/file/" + file.getOriginalFilename()));
+
+		//File files=new File("D:/"+file.getOriginalFilename());
+		File files=new File("/root/file/"+file.getOriginalFilename());
 		Face face=new Face();
 		String token=face.getToken(files);
 		FaceUtil faceutil=new FaceUtil();
