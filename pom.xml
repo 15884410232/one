@@ -262,7 +262,26 @@
 			<artifactId>spring-session</artifactId>
 			<version>1.0.2.RELEASE</version>
 		</dependency>
-
+		<dependency>
+			<groupId>messageSDK</groupId>
+			<artifactId>messageSDk</artifactId>
+			<version>3.3.1.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>messageAPI</groupId>
+			<artifactId>messageAPI</artifactId>
+			<version>3.3.1.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>alipay</groupId>
+			<artifactId>alipay</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>alipay-log</groupId>
+			<artifactId>alipay-log</artifactId>
+			<version>1.0</version>
+		</dependency>
 
 	</dependencies>
 	<build>

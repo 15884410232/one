@@ -6,6 +6,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.test.mapper.UserMapper;
 import com.test.service.UserService;
 
 import redis.clients.jedis.JedisCluster;
@@ -16,9 +17,12 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private JedisCluster jedisCluster;
 	
+	@Autowired
+	private UserMapper userMapper;
+	
 	@Override
-	public String getUserByName(String userName) {
-		return null;
+	public Map<String,String> getUserByName(String userName) {
+		return userMapper.getUserInfo().get(0);
 	}
 
 	@Override

@@ -77,8 +77,12 @@
 		<property name="username" value="root" />
 		<property name="password" value="199510" /> -->
 		
-		<property name="url"
+<!-- 		<property name="url"
 			value="jdbc:mysql://rm-uf6t3i186uwv28f52.mysql.rds.aliyuncs.com:3306/novel?useUnicode=true&amp;characterEncoding=utf8" />
+		<property name="username" value="root" />
+		<property name="password" value="Wochenqi!" /> -->
+				<property name="url"
+			value="jdbc:mysql://localhost:3306/read?useUnicode=true&amp;characterEncoding=utf8" />
 		<property name="username" value="root" />
 		<property name="password" value="Wochenqi!" />
 		
